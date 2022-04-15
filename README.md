@@ -19,6 +19,22 @@ We had data on 8k patients that had developed metastatic brain cancer and their 
 
 We used a decision tree classifier to segment the patients by survival times and Kaplan Meier curve curves to check the separation between the classes.
 
+#### LUNG DS GPA Model
+
+#### Original
+
+![](Lung_old.png)
+
+#### New
+##### 2 Classes
+
+![](Lung_2class.png)
+
+##### 3 Classes
+
+![](Lung_3class.png)
+
+#### 
 
 ### Project 2 Predicting tumor growth:
 
