@@ -1,9 +1,10 @@
 
-## Prelude:
+### Prelude:
 
-As part of our coursework at USF, we are supposed to complete nine month's practicum. We were always interested in applying Deep Learning to solve problems in the healthcare space which led me to our internship at UCSF.
+This project was executed as a part of our internship at UCSF. We had two projects first was to develop interpretable decision tree models to
+segment patients by the severity of cancer and replace an existing model that did not work well. The second was to use brain tumor images and predict whether the tumor would grow
 
-### Project 1 Survival Analysis:
+### Project 1 Segmenting patients by the severity of cancer:
 
 #### Background
 
