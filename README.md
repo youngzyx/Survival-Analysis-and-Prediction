@@ -34,18 +34,3 @@ We used a decision tree classifier to segment the patients by survival times and
 
 ![](Lung_3class.png)
 
-#### 
-
-### Project 2 Predicting tumor growth:
-
-#### Problem:
-
-Due to the side effects associated with cancer treatment, clinicians need to identify patients that require more aggressive treatment, which is where our model comes in. It predicts the tumor's probability to grow based on its initial presentation. 
-
-#### The Data:
-
-We had 8500 3D MRI images of brain tumors and additional tumor size and density features.
-
-#### What we did:
-
-We developed an Alex net model that trained on these images, which we found was not complex enough to predict tumor growth. Currently, we are training a ResNet 50 model and working on improving its performance. Furthermore, we also plan to include additional features like tumor size and density to better the model performance.
