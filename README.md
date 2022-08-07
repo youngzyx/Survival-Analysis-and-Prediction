@@ -25,10 +25,10 @@ We then fit a Kaplan Meier Survival curve on the class produced by the tree in o
 
 #### ORIGINAL
 
-![](Lung_old.png)
+![](images/Lung_old.png)
 
 #### OUR MODEL
 
 ##### 3 Classes
 
-![](Lung_3class.png)
+![](images/Lung_3class.png)
