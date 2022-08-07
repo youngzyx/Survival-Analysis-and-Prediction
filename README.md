@@ -1,52 +1,34 @@
+### MOTIVATION:
 
-### Prelude:
+This project was executed as a part of our internship at UCSF.
+Superduto et all had developed a clincal methodology(Diagnosis-specific Graded Prognostic Assessment) to segment patients by the severity of the cancer such that they have well separated survival times and develop an estimated time for each patient. However, the data found at UCSF was found not to follow what Superduto had predicted:
 
-This project was executed as a part of our internship at UCSF. We had two projects first was to develop interpretable decision tree models to
-segment patients by the severity of cancer and replace an existing model that did not work well. The second was to use brain tumor images and predict whether the tumor would grow
-
-### Project 1 Segmenting patients by the severity of cancer:
-
-#### Background
-
-Clinicians use DS - GPA(Diagnosis-specific Graded Prognostic Assessment) model to segment patients by cancer severity to better inform the treatment decision they need to take. However, there were a few problems with this model. 
-
-1) patients lived far longer than predicted by the model. 
+1) patients lived far longer than predicted 
 2) Additionally, there was a significant overlap in the patient survival times between the GPA classes.
 
-We needed to apply the DS GPA model to our dataset and develop a new DS-GPA model to replace the existing one.
+Our objective was to update the methodology that Superduto had proposed 
 
-#### What we did:
-We had data on 8k patients that had developed metastatic brain cancer and their demographic information( age, sex etc) and their disease presentation metrics( such as the size of the tumor)
 
-We used a decision tree classifier to segment the patients by survival times and Kaplan Meier curve curves to check the separation between the classes.
+### DATASET
 
-#### LUNG DS GPA Model
+Tabular data of patients suffereing from Brain Metastatic Cancer and clinical attributes of the patients such as Age, Sex etc.
 
-#### Original
+The target variable was time of death 
+
+#### MODEL:
+
+We used a decision tree model to predict the time of death. The predictions from the model were used to decide which classes the patient belonged to. For instance, if the tree predicted two leaves, the patient belonging to the leaf node with a lower mean survival time would be assigned class zero and the patient belonging to the other leaf node class one.
+
+We then fit a Kaplan Meier Survival curve on the class produced by the tree in order to see a graphical/statistical seperation of survival between the groups predicted
+
+#### LUNG CANCER
+
+#### ORIGINAL
 
 ![](Lung_old.png)
 
-#### New
-##### 2 Classes
-
-![](Lung_2class.png)
+#### OUR MODEL
 
 ##### 3 Classes
 
 ![](Lung_3class.png)
-
-#### 
-
-### Project 2 Predicting tumor growth:
-
-#### Problem:
-
-Due to the side effects associated with cancer treatment, clinicians need to identify patients that require more aggressive treatment, which is where our model comes in. It predicts the tumor's probability to grow based on its initial presentation. 
-
-#### The Data:
-
-We had 8500 3D MRI images of brain tumors and additional tumor size and density features.
-
-#### What we did:
-
-We developed an Alex net model that trained on these images, which we found was not complex enough to predict tumor growth. Currently, we are training a ResNet 50 model and working on improving its performance. Furthermore, we also plan to include additional features like tumor size and density to better the model performance.
