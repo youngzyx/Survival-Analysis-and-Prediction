@@ -1,12 +1,11 @@
 ### MOTIVATION:
 
-This project was executed as a part of our internship at UCSF.
-Superduto et all had developed a clincal methodology(Diagnosis-specific Graded Prognostic Assessment) to segment patients by the severity of the cancer such that they have well separated survival times and develop an estimated time for each patient. However, the data found at UCSF was found not to follow what Superduto had predicted:
+This project was executed as a part of our internship at UCSF. Superduto et all developed a clinical methodology(Diagnosis-specific Graded Prognostic Assessment) to segment patients by the severity of cancer so that they have well-separated survival times and develop an estimated time for each patient. However, for UCSF patients, we observed the following:
 
 1) patients lived far longer than predicted 
 2) Additionally, there was a significant overlap in the patient survival times between the GPA classes.
 
-Our objective was to update the methodology that Superduto had proposed 
+Our objective was to show that the old model did not fit the observed data, and develop a new model. 
 
 
 ### DATASET
