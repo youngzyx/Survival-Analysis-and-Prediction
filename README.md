@@ -1,36 +1,34 @@
+### MOTIVATION:
 
-## Prelude:
+This project was executed as a part of our internship at UCSF.
+Superduto et all had developed a clincal methodology(Diagnosis-specific Graded Prognostic Assessment) to segment patients by the severity of the cancer such that they have well separated survival times and develop an estimated time for each patient. However, the data found at UCSF was found not to follow what Superduto had predicted:
 
-As part of our coursework at USF, we are supposed to complete nine month's practicum. We were always interested in applying Deep Learning to solve problems in the healthcare space which led me to our internship at UCSF.
-
-### Project 1 Survival Analysis:
-
-#### Background
-
-Clinicians use DS - GPA(Diagnosis-specific Graded Prognostic Assessment) model to segment patients by cancer severity to better inform the treatment decision they need to take. However, there were a few problems with this model. 
-
-1) patients lived far longer than predicted by the model. 
+1) patients lived far longer than predicted 
 2) Additionally, there was a significant overlap in the patient survival times between the GPA classes.
 
-We needed to apply the DS GPA model to our dataset and develop a new DS-GPA model to replace the existing one.
+Our objective was to update the methodology that Superduto had proposed 
 
-#### What we did:
-We had data on 8k patients that had developed metastatic brain cancer and their demographic information( age, sex etc) and their disease presentation metrics( such as the size of the tumor)
 
-We used a decision tree classifier to segment the patients by survival times and Kaplan Meier curve curves to check the separation between the classes.
+### DATASET
 
-#### LUNG DS GPA Model
+Tabular data of patients suffereing from Brain Metastatic Cancer and clinical attributes of the patients such as Age, Sex etc.
 
-#### Original
+The target variable was time of death 
+
+#### MODEL:
+
+We used a decision tree model to predict the time of death. The predictions from the model were used to decide which classes the patient belonged to. For instance, if the tree predicted two leaves, the patient belonging to the leaf node with a lower mean survival time would be assigned class zero and the patient belonging to the other leaf node class one.
+
+We then fit a Kaplan Meier Survival curve on the class produced by the tree in order to see a graphical/statistical seperation of survival between the groups predicted
+
+#### LUNG CANCER
+
+#### ORIGINAL
 
 ![](Lung_old.png)
 
-#### New
-##### 2 Classes
-
-![](Lung_2class.png)
+#### OUR MODEL
 
 ##### 3 Classes
 
 ![](Lung_3class.png)
-
