@@ -18,9 +18,9 @@ The target variable was time of death
 
 We used a decision tree model to predict the time of death. The predictions from the model were used to decide which classes the patient belonged to. For instance, if the tree predicted two leaves, the patient belonging to the leaf node with a lower mean survival time would be assigned class zero and the patient belonging to the other leaf node class one.
 
-We then fit a Kaplan Meier Survival curve on the class produced by the tree in order to see a graphical/statistical seperation of survival between the groups predicted
+We then fit a Kaplan Meier Survival curve on the classes produced to see a graphical/statistical separation of survival times.
 
-#### LUNG CANCER
+#### FOR LUNG CANCER
 
 #### ORIGINAL
 
