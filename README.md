@@ -1,5 +1,8 @@
 # Survival Analysis and Prediction for Patients suffering from Brain Metastatic Cancer
 
+#### Team
+[Young Zeng](github.com/youngzyx), [Anish Mukherjee](https://github.com/anmuai)
+
 ## 1. Dataset
 
 Tabular data of patients suffering from Brain Metastatic Cancer and clinical attributes of the patients such as Age, Sex etc.
