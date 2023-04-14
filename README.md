@@ -48,7 +48,8 @@ Besides the traditional survival analysis above, we also use machine learning mo
 For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB score for classifier.
 
 - Target: Survival Time (Regressor)
-|Tumor Site|Sample size|OOB $R^2$/score|Feature|
+
+|Tumor Site|Sample size|OOB $R^2$ |Feature|
 |:---------|:-------------:|:-----------:|------:|
 |Breast|307|0.036|All|
 |Breast|307|-0.018|Top 5|
@@ -58,3 +59,29 @@ For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB scor
 |Lung|502|0.047|Top 5|
 |Kidney|74|-0.013|All|
 |Kidney|74|-0.037|Top 5|
+
+- Target: 1-year Survival (Classifier)
+
+|Tumor Site|Sample size|OOB Score |Feature|
+|:---------|:-------------:|:-----------:|------:|
+|Breast|307|0.570|All|
+|Breast|307|0.577|Top 5|
+|Melanoma|309|0.676|All|
+|Melanoma|309|0.686|Top 5|
+|Lung|502|0.635|All|
+|Lung|502|0.598|Top 5|
+|Kidney|74|0.527|All|
+|Kidney|74|0.595|Top 5|
+
+- Target: 2-year Survival (Classifier)
+
+|Tumor Site|Sample size|OOB Score |Feature|
+|:---------|:-------------:|:-----------:|------:|
+|Breast|307|0.713|All|
+|Breast|307|0.700|Top 5|
+|Melanoma|309|0.867|All|
+|Melanoma|309|0.867|Top 5|
+|Lung|502|0.771|All|
+|Lung|502|0.771|Top 5|
+|Kidney|74|0.770|All|
+|Kidney|74|0.770|Top 5|
