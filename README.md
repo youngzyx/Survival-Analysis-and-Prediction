@@ -52,16 +52,16 @@ For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB scor
 
 - Target: Survival Time (Regressor)
 
-|Tumor Site|Sample size|Test MSE|Test $R^2$ |Feature|
-|:---------|:---------:|:------:|:---------:|------:|
-|Breast|307|380737.842|-0.251|All|
-|Breast|307|585357.410|-0.923|Top 5|
-|Melanoma|309|646153.461|-0.237|All|
-|Melanoma|309|577576.216|-0.106|Top 5|
-|Lung|502|736646.178|-0.220|All|
-|Lung|502|797401.025|-0.321|Top 5|
-|Kidney|74|717370.649|-0.765|All|
-|Kidney|74|632510.391|-0.556|Top 5|
+|Tumor Site|Sample size|OOB $R^2$ |Feature|
+|:---------|:-------------:|:-----------:|------:|
+|Breast|307|0.036|All|
+|Breast|307|-0.018|Top 5|
+|Melanoma|309|0.036|All|
+|Melanoma|309|-0.037|Top 5|
+|Lung|502|0.066|All|
+|Lung|502|0.047|Top 5|
+|Kidney|74|-0.013|All|
+|Kidney|74|-0.037|Top 5|
 
 - Target: 1-year Survival (Classifier)
 
@@ -92,16 +92,18 @@ For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB scor
 #### 3.1.2 XGBoost Model
 - [Notebook link](https://github.com/youngzyx/Survival-Analysis-and-Prediction/blob/main/notebooks/xgb.ipynb)
 
-|Tumor Site|Sample size|OOB $R^2$ |Feature|
-|:---------|:-------------:|:-----------:|------:|
-|Breast|307|0.036|All|
-|Breast|307|-0.018|Top 5|
-|Melanoma|309|0.036|All|
-|Melanoma|309|-0.037|Top 5|
-|Lung|502|0.066|All|
-|Lung|502|0.047|Top 5|
-|Kidney|74|-0.013|All|
-|Kidney|74|-0.037|Top 5|
+|Tumor Site|Sample size|Test MSE|Test $R^2$ |Feature|
+|:---------|:---------:|:------:|:---------:|------:|
+|Breast|307|380737.842|-0.251|All|
+|Breast|307|585357.410|-0.923|Top 5|
+|Melanoma|309|646153.461|-0.237|All|
+|Melanoma|309|577576.216|-0.106|Top 5|
+|Lung|502|736646.178|-0.220|All|
+|Lung|502|797401.025|-0.321|Top 5|
+|Kidney|74|717370.649|-0.765|All|
+|Kidney|74|632510.391|-0.556|Top 5|
+
+
 
 - Target: 1-year Survival (Classifier)
 
