@@ -37,7 +37,7 @@ We then fit a `Kaplan Meier Survival curve` on the classes produced to see a gra
 
 ## 3. Survival Prediction
 
-Besides the traditional survival analysis above, we also use machine learning models for survival prediction. [Random Forest](https://github.com/youngzyx/Survival-Analysis-and-Prediction/blob/main/notebooks/Random_Forest.ipynb) models and [XGBoost](https://github.com/youngzyx/Survival-Analysis-and-Prediction/blob/main/notebooks/xgb.ipynb) models had been constructed toward the following target variables:
+Besides the traditional survival analysis above, we also use machine learning models for survival prediction. `Random Forest` models and `XGBoost` models had been constructed toward the following target variables:
 
 1. survival time (regression)
 2. 1-year survival (classification)
@@ -47,18 +47,21 @@ Besides the traditional survival analysis above, we also use machine learning mo
 #### 3.1.1 Random Forest Model
 For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB score for classifier.
 
+- [Notebook Link](https://github.com/youngzyx/Survival-Analysis-and-Prediction/blob/main/notebooks/Random_Forest.ipynb)
+
+
 - Target: Survival Time (Regressor)
 
-|Tumor Site|Sample size|OOB $R^2$ |Feature|
-|:---------|:-------------:|:-----------:|------:|
-|Breast|307|0.036|All|
-|Breast|307|-0.018|Top 5|
-|Melanoma|309|0.036|All|
-|Melanoma|309|-0.037|Top 5|
-|Lung|502|0.066|All|
-|Lung|502|0.047|Top 5|
-|Kidney|74|-0.013|All|
-|Kidney|74|-0.037|Top 5|
+|Tumor Site|Sample size|Test MSE|Test $R^2$ |Feature|
+|:---------|:---------:|:------:|:---------:|------:|
+|Breast|307|380737.842|-0.251|All|
+|Breast|307|585357.410|-0.923|Top 5|
+|Melanoma|309|646153.461|-0.237|All|
+|Melanoma|309|577576.216|-0.106|Top 5|
+|Lung|502|736646.178|-0.220|All|
+|Lung|502|797401.025|-0.321|Top 5|
+|Kidney|74|717370.649|-0.765|All|
+|Kidney|74|632510.391|-0.556|Top 5|
 
 - Target: 1-year Survival (Classifier)
 
@@ -85,3 +88,30 @@ For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB scor
 |Lung|502|0.771|Top 5|
 |Kidney|74|0.770|All|
 |Kidney|74|0.770|Top 5|
+
+#### 3.1.2 XGBoost Model
+- [Notebook link](https://github.com/youngzyx/Survival-Analysis-and-Prediction/blob/main/notebooks/xgb.ipynb)
+
+|Tumor Site|Sample size|OOB $R^2$ |Feature|
+|:---------|:-------------:|:-----------:|------:|
+|Breast|307|0.036|All|
+|Breast|307|-0.018|Top 5|
+|Melanoma|309|0.036|All|
+|Melanoma|309|-0.037|Top 5|
+|Lung|502|0.066|All|
+|Lung|502|0.047|Top 5|
+|Kidney|74|-0.013|All|
+|Kidney|74|-0.037|Top 5|
+
+- Target: 1-year Survival (Classifier)
+
+|Tumor Site|Sample size|OOB Score |Feature|
+|:---------|:-------------:|:-----------:|------:|
+|Breast|307|0.570|All|
+|Breast|307|0.577|Top 5|
+|Melanoma|309|0.676|All|
+|Melanoma|309|0.686|Top 5|
+|Lung|502|0.635|All|
+|Lung|502|0.598|Top 5|
+|Kidney|74|0.527|All|
+|Kidney|74|0.595|Top 5|
