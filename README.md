@@ -91,6 +91,7 @@ For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB scor
 
 #### 3.1.2 XGBoost Model
 - [Notebook link](https://github.com/youngzyx/Survival-Analysis-and-Prediction/blob/main/notebooks/xgb.ipynb)
+- Target: Survival Time (Regressor)
 
 |Tumor Site|Sample size|Test MSE|Test $R^2$ |Feature|
 |:---------|:---------:|:------:|:---------:|------:|
@@ -107,13 +108,27 @@ For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB scor
 
 - Target: 1-year Survival (Classifier)
 
-|Tumor Site|Sample size|OOB Score |Feature|
-|:---------|:-------------:|:-----------:|------:|
-|Breast|307|0.570|All|
-|Breast|307|0.577|Top 5|
-|Melanoma|309|0.676|All|
-|Melanoma|309|0.686|Top 5|
-|Lung|502|0.635|All|
-|Lung|502|0.598|Top 5|
-|Kidney|74|0.527|All|
-|Kidney|74|0.595|Top 5|
+|Tumor Site|Sample size|Test Accuracy|Test ROC_AUC |Feature|
+|:---------|:---------:|:------:|:------:|------:|
+|Breast|307|0.506| 0.566|All|
+|Breast|307|0.558|  0.572 |Top 5|
+|Melanoma|309| 0.692|0.665|All|
+|Melanoma|309|0.692|0.668|Top 5|
+|Lung|502|0.659|  0.754|All|
+|Lung|502|0.690|0.759|Top 5|
+|Kidney|74|0.570|      0.5|All|
+|Kidney|74| 0.579|    0.5 |Top 5|
+
+
+- Target: 2-year Survival (Classifier)
+
+|Tumor Site|Sample size|Test Accuracy|Test ROC_AUC |Feature|
+|:---------|:---------:|:------:|:------:|------:|
+|Breast|307|0.688|0.585|All|
+|Breast|307|0.675|0.543 |Top 5|
+|Melanoma|309|0.885|0.5|All|
+|Melanoma|309|0.885|0.5|Top 5|
+|Lung|502|0.746| 0.5|All|
+|Lung|502|0.746|0.5|Top 5|
+|Kidney|74|0.842|      0.5|All|
+|Kidney|74| 0.842|    0.5 |Top 5|
