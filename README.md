@@ -1,4 +1,4 @@
-# Survival Analysis and Prediction for Patients with Brain Metastatic
+# Survival Analysis and Prediction for Patients with Brain Metastatic Cancer
 
 #### Team
 [Young Zeng](github.com/youngzyx), [Anish Mukherjee](https://github.com/anmuai)
