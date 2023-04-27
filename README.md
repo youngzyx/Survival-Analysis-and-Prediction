@@ -12,7 +12,7 @@ The target variable was time of death
 ## 2. Survival Analysis
 ### 2.1 Movivation
 
-This project was executed as a part of our internship at UCSF. Superduto et all developed a clinical methodology(Diagnosis-specific Graded Prognostic Assessment) to segment patients by the severity of cancer so that they have well-separated survival times and develop an estimated time for each patient. However, for UCSF patients, we observed the following:
+This project was executed as a part of our internship at UCSF. Superduto et al developed a clinical methodology(Diagnosis-specific Graded Prognostic Assessment) to segment patients by the severity of cancer so that they have well-separated survival times and develop an estimated time for each patient. However, for UCSF patients, we observed the following:
 
 1) Patients lived far longer than predicted 
 2) There was a significant overlap in the patient survival times between the GPA classes.
