@@ -1,18 +1,18 @@
-# Survival Analysis and Prediction for Patients with Brain Metastatic Cancer
+# Survival Analysis and Prediction for Patients with Brain Metaststases
 
 #### Team
 [Young Zeng](github.com/youngzyx), [Anish Mukherjee](https://github.com/anmuai)
 
 ## 1. Dataset
 
-Tabular data of patients suffering from Brain Metastatic Cancer and clinical attributes of the patients such as Age, Sex etc.
+Tabular data of 1876 patients with brain metastases treated from 1991-2018. The data includes detail patient information and  clinical attributes such as KPS, locations, primary tumor, histology, ECM, prior treatment,etc.
 
 The target variable was time of death 
 
 ## 2. Survival Analysis
 ### 2.1 Movivation
 
-This project was executed as a part of our internship at UCSF. Superduto et al developed a clinical methodology(Diagnosis-specific Graded Prognostic Assessment) to segment patients by the severity of cancer so that they have well-separated survival times and develop an estimated time for each patient. However, for UCSF patients, we observed the following:
+This project was executed as a part of our internship at UCSF. Sperduto et al. (2008), Sperduto et al. (2012) and Sperduto et al. (2020) developed a clinical methodology (Diagnosis-specific Graded Prognostic Assessment, DS-GPA) to segment patients by the severity of cancer.  so that they have well-separated survival times and develop an estimated time for each patient. However, for UCSF patients, we observed the following:
 
 1) Patients lived far longer than predicted 
 2) There was a significant overlap in the patient survival times between the GPA classes.
@@ -132,3 +132,8 @@ For Random Forest model, we use out of bag (OOB) $R^2$ for regressor or OOB scor
 |Lung|502|0.746|0.5|Top 5|
 |Kidney|74|0.842|      0.5|All|
 |Kidney|74| 0.842|    0.5 |Top 5|
+
+## 4. Reference
+- Sperduto, P. W., Berkey, B., Gaspar, L. E., Mehta, M., & Curran, W. (2008). A new prognostic index and comparison to three other indices for patients with brain metastases: an analysis of 1,960 patients in the RTOG database. International Journal of Radiation Oncology* Biology* Physics, 70(2), 510-514.
+- Sperduto, P. W., Kased, N., Roberge, D., Xu, Z., Shanley, R., Luo, X., ... & Mehta, M. (2012). Summary report on the graded prognostic assessment: an accurate and facile diagnosis-specific tool to estimate survival for patients with brain metastases. Journal of Clinical Oncology, 30(4), 419.
+- Sperduto, P. W., Mesko, S., Li, J., Cagney, D., Aizer, A., Lin, N. U., ... & Mehta, M. P. (2020). Beyond an updated graded prognostic assessment (breast GPA): a prognostic index and trends in treatment and survival in breast cancer brain metastases from 1985 to today. International Journal of Radiation Oncology* Biology* Physics, 107(2), 334-343.
